@@ -1,17 +1,15 @@
 # 🎓 SchoolWebApp
 
-Une application web de gestion scolaire complète, développée avec **ReactJS** pour le frontend, **FastAPI** pour le backend, et **MySQL** comme base de données.
+Une application web complète pour la gestion des étudiants, construite avec **ReactJS**, **FastAPI**, et **MySQL**.
 
 ---
 
 ## 🚀 Fonctionnalités principales
 
-- Gestion des utilisateurs (étudiants, enseignants, administrateurs)
-- Authentification avec JWT
-- Gestion des absences, résultats, cours et réclamations
-- Interface utilisateur moderne et responsive (ReactJS)
-- API REST avec documentation interactive (FastAPI + Swagger)
-- Stockage relationnel (MySQL)
+- Authentification sécurisée (JWT)
+- Interface utilisateur fluide et moderne (React)
+- API REST avec documentation interactive (Swagger)
+- Gestion des étudiants, cours, absences, résultats et problèmes signalés
 
 ---
 
@@ -27,20 +25,30 @@ Voici la page de connexion pour les étudiants :
 
 ## 🗄️ Schéma de base de données (EER Diagram)
 
-Modèle de données relationnel (MySQL Workbench) :
+Modèle relationnel (MySQL Workbench) :
 
-<img width="330" src="https://user-images.githubusercontent.com/112178680/230625723-cb62ee16-4072-4225-a877-6407ce821e32.png" alt="MIT LicenSe">
+<img width="330" src="https://user-images.githubusercontent.com/112178680/230625741-558cf5e3-44f9-4549-ac7b-3c69cad67bcd.png" alt="MIT LicenSe">
 
 > Tables : `student`, `studentcourses`, `studentresults`, `studentleaves`, `studentattendance`, `studentissues`
 
 ---
 
-## 🧱 Technologies utilisées
+## 🔍 API REST – Documentation Swagger (FastAPI)
 
-| Frontend       | Backend      | Base de données | Autres              |
-|----------------|--------------|------------------|----------------------|
-| ReactJS        | FastAPI      | MySQL            | JWT Auth, Axios      |
-| HTML/CSS/JS    | Pydantic     | SQLAlchemy        | dotenv, Alembic     |
+Documentation automatique générée par FastAPI :
+
+<img width="330" src="https://user-images.githubusercontent.com/112178680/230625723-cb62ee16-4072-4225-a877-6407ce821e32.png" alt="MIT LicenSe">
+
+> Endpoints pour connexion, gestion des étudiants, présence, résultats, etc.
+
+---
+
+## 🧱 Stack technique
+
+| Frontend       | Backend      | Base de données | Outils                |
+|----------------|--------------|------------------|------------------------|
+| ReactJS        | FastAPI      | MySQL            | Swagger, Axios, JWT    |
+| HTML/CSS/JS    | Pydantic     | SQLAlchemy ORM   | dotenv, Uvicorn       |
 
 ---
 
@@ -50,42 +58,43 @@ Modèle de données relationnel (MySQL Workbench) :
 
 - Python 3.9+
 - Node.js 16+
-- MySQL Server (ou XAMPP/WAMP)
+- MySQL (ou XAMPP/WAMP)
 - (Optionnel) Docker
-
----
 
 ### 🔧 Backend (FastAPI)
 
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate        # Linux/macOS: source venv/bin/activate
+venv\Scripts\activate      # ou source venv/bin/activate sous Linux/Mac
 pip install -r requirements.txt
 uvicorn main:app --reload
 cd frontend
 npm install
 npm start
 CREATE DATABASE school_db;
--- puis importer le fichier school_db.sql via phpMyAdmin ou terminal
+-- puis importer le script school_db.sql si disponible
 SchoolWebApp/
 ├── backend/
-│   ├── main.py
 │   └── ...
 ├── frontend/
-│   └── src/
-├── school_db.sql
+│   └── ...
 ├── screenshots/
 │   ├── studentsignin.png
-│   └── eer_diagram.png
+│   ├── eer_diagram.png
+│   └── fastapi_docs.png
 └── README.md
 
 ---
 
-### 📁 À faire :
+### 🎯 Prochaine étape
 
-- Place les **images** renommées dans un dossier `screenshots/` à la racine du projet :
-  - `screenshots/studentsignin.png` → image de login
-  - `screenshots/eer_diagram.png` → image EER MySQL
+Assure-toi de :
+- Placer les images renommées dans `screenshots/` :
+  - `studentsignin.png`
+  - `eer_diagram.png`
+  - `fastapi_docs.png`
+- Commiter le tout dans ton dépôt GitHub.
 
-Souhaite-tu que je te donne directement le fichier `README.md` prêt à télécharger ?
+Souhaites-tu que je te crée une archive `.zip` avec tout prêt à l’emploi ?
+
