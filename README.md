@@ -19,7 +19,7 @@ Une application web de gestion scolaire complète, développée avec **ReactJS**
 
 Voici la page de connexion pour les étudiants :
 
-![Page de connexion](./screenshots/studentsignin.png)
+<img width="330" src="https://user-images.githubusercontent.com/112178680/230625713-969b0e34-feac-4352-a0bc-b62efd27e8d1.png" alt="MIT LicenSe">
 
 > Interface épurée avec navigation latérale, options sociales, et design réactif.
 
@@ -29,7 +29,7 @@ Voici la page de connexion pour les étudiants :
 
 Modèle de données relationnel (MySQL Workbench) :
 
-![EER Diagram](./screenshots/eer_diagram.png)
+<img width="330" src="https://user-images.githubusercontent.com/112178680/230625723-cb62ee16-4072-4225-a877-6407ce821e32.png" alt="MIT LicenSe">
 
 > Tables : `student`, `studentcourses`, `studentresults`, `studentleaves`, `studentattendance`, `studentissues`
 
